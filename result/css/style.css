@@ -1,0 +1,54 @@
+body, html, h1{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+body{
+	background-color: #ccc;
+	font-family: Arial;
+}
+.content{
+	background-color: #fff;
+	width: 90%;
+	margin: 2em auto;
+	padding: 1em;
+	overflow: hidden;
+}
+.content_block{
+	padding: 1em 0;
+}
+.bottom_dotted{
+	border-bottom: 1px dotted #935;
+}
+.news_date{
+	color: #fff;
+	background-color: #935;
+	margin-right: 5px;
+	padding: 1px;
+}
+.pages{
+	display: flex;
+	flex-wrap: wrap;
+}
+.button {
+	background-color: #ddd;
+	margin: 2px;
+	padding: 2px;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #ccc;
+
+	/* Делает одинаковыми по ширине */
+	flex-basis: calc(100% / 37);
+}
+.button:hover{
+	box-shadow: inset 0px 0px 999px #fff;
+}
+a.button.selected{
+	background-color: #935;
+	color: #fff;
+}
+a.button.selected:hover{
+	box-shadow: none;
+}
